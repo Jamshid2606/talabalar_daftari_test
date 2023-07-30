@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:id="@+id/book_home"
+    android:title="Home"
+    android:icon="@drawable/book"/>
+    <item android:title="Setting"
+        android:id="@+id/setting_item"
+        android:actionLayout="@layout/bottom_nav_item"
+        android:icon="@drawable/ic_setting"/>
+
+
+    <item android:title="Add"
+        android:id="@+id/add"
+        android:actionLayout="@layout/bottom_nav_item"
+        android:icon="@drawable/ic_add"/>
+
+
+    <item android:title="Search"
+        android:id="@+id/search"
+        android:actionLayout="@layout/bottom_nav_item"
+        android:icon="@drawable/search"/>
+
+
+
+    <item android:title="Profile"
+        android:id="@+id/profile"
+        android:actionLayout="@layout/bottom_nav_item"
+        android:icon="@drawable/student"/>
+
+
+</menu>

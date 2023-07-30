@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_baseline_notifications_none_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/bg_notif"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@id/imageView2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="+2"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_toolbar" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Farida Askarova"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/circleImageView"
+            app:layout_constraintTop_toTopOf="@+id/circleImageView" />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="id:123456"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/user_name"
+            app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+
+        <LinearLayout
+            android:id="@+id/container_name"
+            android:layout_width="368dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/profile_edittext_bg"
+            app:layout_constraintStart_toStartOf="@+id/circleImageView"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView">
+
+            <TextView
+                android:id="@+id/registerFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/inter"
+                android:text="Ism Familya"
+                android:textColor="#414495"
+                android:textColorHint="#787171"
+
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="368dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/profile_edittext_bg"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/container_name"
+            app:layout_constraintStart_toStartOf="@+id/container_name"
+            app:layout_constraintTop_toBottomOf="@+id/container_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/inter"
+                android:text="Yoshingiz"
+                android:textColor="#414495"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="235dp"
+                android:src="@drawable/ic_calendar" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_phone"
+            android:layout_width="368dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/profile_edittext_bg"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/phone_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/inter"
+                android:text="Telefon raqam"
+                android:textColor="#414495"
+                android:textColorHint="#787171"
+
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_school_type"
+            android:layout_width="368dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/profile_edittext_bg"
+            app:layout_constraintEnd_toEndOf="@+id/container_phone"
+            app:layout_constraintStart_toStartOf="@+id/container_phone"
+            app:layout_constraintTop_toBottomOf="@+id/container_phone">
+
+            <TextView
+                android:id="@+id/school_type_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/inter"
+                android:text="O’quv joyingizni tanlang"
+                android:textColor="#414495"
+                android:textColorHint="#787171"
+
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_school_name"
+            android:layout_width="368dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/profile_edittext_bg"
+            app:layout_constraintEnd_toEndOf="@+id/container_phone"
+            app:layout_constraintStart_toStartOf="@+id/container_phone"
+            app:layout_constraintTop_toBottomOf="@+id/container_school_type">
+
+            <TextView
+                android:id="@+id/school_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/inter"
+                android:text="O’quv joyingiz"
+                android:textColor="#414495"
+                android:textColorHint="#787171"
+
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_faculty_name"
+            android:layout_width="368dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/profile_edittext_bg"
+            app:layout_constraintEnd_toEndOf="@+id/container_phone"
+            app:layout_constraintStart_toStartOf="@+id/container_phone"
+            app:layout_constraintTop_toBottomOf="@+id/container_school_name">
+
+            <TextView
+                android:id="@+id/faculty_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/inter"
+                android:text="Fakultetingizni yozing"
+                android:textColor="#414495"
+                android:textColorHint="#787171"
+
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_course_name"
+            android:layout_width="368dp"
+            android:layout_marginTop="14dp"
+            android:layout_height="56dp"
+            android:background="@drawable/profile_edittext_bg"
+            app:layout_constraintEnd_toEndOf="@+id/container_phone"
+            app:layout_constraintStart_toStartOf="@+id/container_phone"
+            app:layout_constraintTop_toBottomOf="@id/container_faculty_name">
+
+            <TextView
+                android:id="@+id/course_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/inter"
+                android:text="Kursingizni yozing"
+                android:textColor="#414495"
+
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/edit_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Edit"
+            android:fontFamily="@font/roboto"
+            android:textColor="#414495"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_course_name" />
+
+        <LinearLayout
+            android:id="@+id/container_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edit_txt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="Log out"
+                android:textColor="#414495" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/next" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

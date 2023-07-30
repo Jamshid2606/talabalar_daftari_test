@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "371916639773",
+    "project_id": "talabalar-daftari-946a1",
+    "storage_bucket": "talabalar-daftari-946a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371916639773:android:e6e9fb33eaee1b8b2a40f4",
+        "android_client_info": {
+          "package_name": "com.student.daftari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371916639773-bvktsed55n3phe7o73jadbo9cpjv2a2e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.student.daftari",
+            "certificate_hash": "ef1876a793ffeed5b357aa4609c78a660b0544fd"
+          }
+        },
+        {
+          "client_id": "371916639773-ihh782q5hdr1e2utdrkkeeldab65mi7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_eb0s1O5O6YILiNi1fTxVB4khthki6GE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371916639773-ihh782q5hdr1e2utdrkkeeldab65mi7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainScreen">
+
+    <fragment
+        android:id="@+id/mainScreen"
+        tools:layout="@layout/main_screen"
+        android:name="com.student.daftari.presentation.main.screen.MainScreen"
+        android:label="MainScreen" >
+        <action
+            android:id="@+id/action_mainScreen_to_editProfileScreen"
+            app:destination="@id/editProfileScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileScreen"
+        tools:layout="@layout/edit_profile_screen"
+        android:name="com.student.daftari.presentation.profile.edit.EditProfileScreen"
+        android:label="EditProfileScreen" />
+</navigation>
